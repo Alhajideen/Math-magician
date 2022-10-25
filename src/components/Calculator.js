@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-// eslint-disable-next-line react/prefer-stateless-function
+// eslint-disable-next-line
 class Calculator extends Component {
   render() {
     return (
