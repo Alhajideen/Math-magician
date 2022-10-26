@@ -8,7 +8,6 @@ function Calculator() {
     operation: null,
   });
 
-
   const handleClick = (e) => {
     const data = e.target.value;
     const state = calculate(info, data);
