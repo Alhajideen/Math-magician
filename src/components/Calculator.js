@@ -8,7 +8,7 @@ function Calculator() {
     operation: null,
   });
 
-  const { total, next, operation } = info;
+
   const handleClick = (e) => {
     const data = e.target.value;
     const state = calculate(info, data);
@@ -21,9 +21,9 @@ function Calculator() {
           <tbody>
             <tr>
               <td colSpan={4} className="result">
-                {total}
-                {operation}
-                {next}
+                {info.total}
+                {info.operation}
+                {info.next}
               </td>
             </tr>
             <tr>
