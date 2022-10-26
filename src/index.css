@@ -26,6 +26,13 @@ code {
     monospace;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
 .calc-container {
   height: 100vh;
   display: flex;
@@ -50,6 +57,7 @@ code {
   text-align: right;
   padding-right: 15px;
   cursor: pointer;
+  height: 50px;
 }
 
 .num {
