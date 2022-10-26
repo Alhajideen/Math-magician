@@ -17,7 +17,6 @@ class Calculator extends Component {
     const data = e.target.value;
     const state = calculate(this.state, data);
     this.setState(state);
-    console.log(state);
   };
 
   render() {
