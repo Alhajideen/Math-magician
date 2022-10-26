@@ -1,10 +1,22 @@
 import React, { Component } from 'react';
 import calculate from '../logic/calculate';
-import operate from '../logic/operate';
+// import operate from '../logic/operate';
 
 // eslint-disable-next-line
 class Calculator extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: '',
+      next: null,
+      operation: null,
+    };
+  }
+
+
+
   render() {
+    const { total, next, operation } = this.state;
     return (
       <div>
         <div className="calc-container">
@@ -12,39 +24,115 @@ class Calculator extends Component {
             <tbody>
               <tr>
                 <td colSpan={4} className="result">
-                  0
+                  {total}
+                  {operation}
+                  {next}
                 </td>
               </tr>
               <tr>
-                <td className="num">AC</td>
-                <td className="num">+/-</td>
-                <td className="num">%</td>
-                <td className="action">÷</td>
+                <td className="num">
+                  <button type="button" onClick={this.handleClick} value="AC">
+                    AC
+                  </button>
+                </td>
+                <td className="num">
+                  <button type="button" onClick={this.handleClick} value="+/-">
+                    +/-
+                  </button>
+                </td>
+                <td className="num">
+                  <button type="button" onClick={this.handleClick} value="%">
+                    %
+                  </button>
+                </td>
+                <td className="action">
+                  <button type="button" onClick={this.handleClick} value="÷">
+                    ÷
+                  </button>
+                </td>
               </tr>
               <tr>
-                <td className="num">7</td>
-                <td className="num">8</td>
-                <td className="num">9</td>
-                <td className="action">x</td>
+                <td className="num">
+                  <button type="button" onClick={this.handleClick} value={7}>
+                    7
+                  </button>
+                </td>
+                <td className="num">
+                  <button type="button" onClick={this.handleClick} value={8}>
+                    8
+                  </button>
+                </td>
+                <td className="num">
+                  <button type="button" onClick={this.handleClick} value={9}>
+                    9
+                  </button>
+                </td>
+                <td className="action">
+                  <button type="button" onClick={this.handleClick} value="x">
+                    x
+                  </button>
+                </td>
               </tr>
               <tr>
-                <td className="num">4</td>
-                <td className="num">5</td>
-                <td className="num">6</td>
-                <td className="action">-</td>
+                <td className="num">
+                  <button type="button" onClick={this.handleClick} value={4}>
+                    4
+                  </button>
+                </td>
+                <td className="num">
+                  <button type="button" onClick={this.handleClick} value={5}>
+                    5
+                  </button>
+                </td>
+                <td className="num">
+                  <button type="button" onClick={this.handleClick} value={6}>
+                    6
+                  </button>
+                </td>
+                <td className="action">
+                  <button type="button" onClick={this.handleClick} value="-">
+                    -
+                  </button>
+                </td>
               </tr>
               <tr>
-                <td className="num">1</td>
-                <td className="num">2</td>
-                <td className="num">3</td>
-                <td className="action">+</td>
+                <td className="num">
+                  <button type="button" onClick={this.handleClick} value={1}>
+                    1
+                  </button>
+                </td>
+                <td className="num">
+                  <button type="button" onClick={this.handleClick} value={2}>
+                    2
+                  </button>
+                </td>
+                <td className="num">
+                  <button type="button" onClick={this.handleClick} value={3}>
+                    3
+                  </button>
+                </td>
+                <td className="action">
+                  <button type="button" onClick={this.handleClick} value="+">
+                    +
+                  </button>
+                </td>
               </tr>
               <tr>
                 <td className="num" colSpan={2}>
-                  0
+                  <button type="button" onClick={this.handleClick} value={0}>
+                    0
+                  </button>
                 </td>
-                <td className="num">.</td>
-                <td className="action">=</td>
+                <td className="num">
+                  <button type="button" onClick={this.handleClick} value=".">
+                    .
+                  </button>
+                </td>
+                <td className="action">
+                  <button type="button" onClick={this.handleClick} value="=">
+                    =
+                  </button>
+                </td>
               </tr>
             </tbody>
           </table>
