@@ -60,3 +60,11 @@ button {
   list-style: none;
   display: flex;
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: grey;
+  text-align: center;
+  width: 100%;
+}

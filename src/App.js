@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import Maths from './components/Maths';
 import Nav from './components/Nav';
@@ -15,6 +16,7 @@ function App() {
         <Route path="/quote" element={<Quote />} />
         {/* <Calculator /> */}
       </Routes>
+      <Footer />
     </div>
   );
 }
