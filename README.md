@@ -1,62 +1,52 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Math Magician
 
-> Description the project.
-
+> This is a simple calculator app that renders three pages; Home page, Calculator page and the Quotes page. The application is capable of doing simple calculations and showing random mathematics quotes
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- React js
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Available Soon](https://livedemo.com)
 
+- To get a local copy up and running follow these simple example steps.
 
-## Getting Started
+type `cd` `dirname`, after type git clone [https://github.com/stanleySimeon/maths-magician.git]
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+# Install
 
+`npm install`
 
-To get a local copy up and running follow these simple example steps.
+# Deployment
+
+- To deploy the project
+
+# type `npm start`
+
+- Runs the app in the development mode.\
+  Automatically your browser should open this link: [http://localhost:3000](http://localhost:3000)
 
 ### Prerequisites
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- Node js
+- VS Code
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Alhajideen](https://github.com/Alhajideen)
+- Twitter: [@Alhaji_deen1](https://twitter.com/Alhaji_deen1)
+- LinkedIn: [Deen](https://linkedin.com/in/nurudeen-salifu-776753244)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Alhajideen/Math-magician/issues).
 
 ## Show your support
 
@@ -64,9 +54,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Hat tip to [Stanley SIMEON](https://github.com/sstanleySimeon/) for design inspiration
 
 ## 📝 License
 
