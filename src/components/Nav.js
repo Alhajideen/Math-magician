@@ -14,9 +14,13 @@ function Nav() {
               <li>Home</li>
             </Link>
             |
-            <li>Calculator</li>
+            <Link to="/calculator">
+              <li>Calculator</li>
+            </Link>
             |
-            <li>Quote</li>
+            <Link to="/quote">
+              <li>Quote</li>
+            </Link>
           </ul>
         </nav>
       </header>
