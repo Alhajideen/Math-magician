@@ -1,16 +1,42 @@
-import React from 'react';
+import axios from 'axios';
+import React, { useState, useEffect } from 'react';
 
 function Quote() {
+  const [quote, setQuote] = useState({});
+
+  const handleQuote = async () => {
+    const URL = 'https://random-math-quote-api.herokuapp.com/';
+    const randomQuote = await axios(URL);
+    const data = await randomQuote.data;
+    setQuote(data);
+    console.log(data);
+  };
+
+  useEffect(() => {
+    const getQuote = async () => {
+      const URL = 'https://random-math-quote-api.herokuapp.com/';
+      const randomQuote = await axios(URL);
+      const data = await randomQuote.data;
+      setQuote(data);
+      console.log(data);
+    };
+    getQuote();
+  }, []);
+
   return (
     <div>
       <div className="quotes-container">
         <div className="quote-body">
           <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint autem
-            quisquam eligendi non nulla distinctio fuga dolor, nostrum molestias
-            sunt!
+            {quote.quote}
+            <i>
+              {' '}
+              -
+              {quote.author}
+            </i>
           </h2>
-          <button id="btn" type="button">
+
+          <button id="btn" type="button" onClick={handleQuote}>
             Get Another Quote
           </button>
         </div>
