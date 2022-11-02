@@ -173,7 +173,7 @@ button {
 .quote-body button {
   background-color: #16a34a;
   color: white;
-  width: 15%;
+  width: auto;
   margin: auto;
   padding: 15px;
   border-radius: 5px;
