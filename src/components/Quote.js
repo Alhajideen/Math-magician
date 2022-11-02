@@ -9,18 +9,10 @@ function Quote() {
     const randomQuote = await axios(URL);
     const data = await randomQuote.data;
     setQuote(data);
-    console.log(data);
   };
 
   useEffect(() => {
-    const getQuote = async () => {
-      const URL = 'https://random-math-quote-api.herokuapp.com/';
-      const randomQuote = await axios(URL);
-      const data = await randomQuote.data;
-      setQuote(data);
-      console.log(data);
-    };
-    getQuote();
+    handleQuote();
   }, []);
 
   return (
