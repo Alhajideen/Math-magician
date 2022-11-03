@@ -10,7 +10,7 @@
 
 ## Live Demo (if available)
 
-[Available Soon](https://livedemo.com)
+[Live deployment Link](https://deen-maths.netlify.app/)
 
 - To get a local copy up and running follow these simple example steps.
 
